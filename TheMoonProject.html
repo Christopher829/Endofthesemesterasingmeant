@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html> 
+<head>
+<style>
+body{background-color:grey;}
+h1{color:black;}
+p{color:black;}
+ol{color:black;}
+.bluewords{color:rgb(10, 0, 191);}
+</style><title>End of semester project</title></head>
+<h1>The moon</h1>
+<body>
+<p>The moon is beautiful and has existed for many years and because of this countless peices of art have been created and inspired by it. Such as this picture i created in ProsesingJS 1.4.8</p>
+<canvas id="mycanvas"></canvas>
+<p>Not only is the moon amazeing to look at it is also <strong>huge</strong> and <strong>ancient</strong> at 1080 miles and 4.8 billion years old.</p> 
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/FullMoon2010.jpg/800px-FullMoon2010.jpg"width="250" height="235">
+<p>Image credit Wikipedia Commons</p>
+<p>The moon also has many diferent phases as listed right here.</p>
+<ol>
+<li>New Moon
+<li>Waxing Crescent Moon
+<li>First Quarter Moon
+<li>Waxing Gibbous Moon
+<li>Third Quarter Moon
+<li>Waning Crescent Moon
+</ol>
+<p>The moon can often be seen in diferent colors then its normal whiteish grey having also been redish orange sometimes. While rare it does happen once in a <em class="bluewords">blue moon</em>.</p>
+<p>For more information about your local moon go to <a href="https://en.wikipedia.org/wiki/Moon">wikipedia.org/wiki/Moon</a></p>
+</body>
+<script src="https://cdn.jsdelivr.net/processing.js/1.4.8/processing.min.js"></script> 
+<script>
+var programCode = function(processingInstance) {
+with (processingInstance) {
+size(250,150);
+background(0)
+ellipse(125,75,115,115)
+}};
+var canvas = document.getElementById("mycanvas");
+var processingInstance = new Processing(canvas, programCode); 
+</script>
+</html>
